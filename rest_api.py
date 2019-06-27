@@ -71,7 +71,7 @@ def analyze_sentiment(text):
 
     if analysis.sentiment.polarity > 0:
         return 1
-    elif analysis.sentiment.polarity == 0:
+    elif analysis.sentiment.polarity <= 0:
         return 0
     else:
         return -1
