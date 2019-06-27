@@ -30,7 +30,7 @@ class Predictor(Resource):
                 sentiment = 1;
             else:
                 sentiment = 0;
-            res = {"date":date, "sentiment":sentiment}
+            res = {"date":date, "sentiment":sentiment,"tweet":tweet}
             result.append(res)
         return Response(json.dumps(result),  mimetype='application/json')
 
@@ -46,7 +46,7 @@ class PredictorTB(Resource):
             date = tweetData['date']
 
             tweetMatrix = analyze_sentiment(tweet)
-            res = {"date":date, "sentiment":tweetMatrix}
+            res = {"date":date, "sentiment":tweetMatrix,"tweet":tweet}
             result.append(res)
         return Response(json.dumps(result),  mimetype='application/json')
 api.add_resource(PredictorTB, '/tbpredict')
