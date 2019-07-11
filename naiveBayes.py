@@ -3,9 +3,13 @@ import pickle
 
 positiveReviewsFileName = "applenews-rt-polarity.pos"
 negativeReviewsFileName = "applenews-rt-polarity.neg"
+#
+# positiveReviewsFileNameNasdaq = "nasdaq-rt-polarity.pos"
+# negativeReviewsFileNameNasdaq = "nasdaq-rt-polarity.neg"
 
-positiveReviewsFileNameNasdaq = "nasdaq-rt-polarity.pos"
-negativeReviewsFileNameNasdaq = "nasdaq-rt-polarity.neg"
+positiveReviewsFileNameNasdaq = "apple-final-rt-polarity.pos"
+negativeReviewsFileNameNasdaq = "apple-final-rt-polarity.neg"
+
 positiveReviews = []
 negativeReviews = []
 
